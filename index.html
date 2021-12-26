@@ -1,0 +1,113 @@
+<!DOCTYPE HTML> <!--establece la version de HTML utilizada-->
+
+<!--Estructura de una pagina web HTML-->
+
+<html lang="es"> <!--Lenguaje español-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	<!--Para poder usar los acentos y la ñ-->
+
+	<head> <!--Cabecera no visible dentro de la pagina web-->
+		<title>Mi primera web</title>
+	</head>
+
+	<body> <!--Cuerpo de la pagina web-->
+		<h1>Titulo de mi página</h1> <!--Encabezado lvl 1 es el Título (Solo 1 en la web)-->
+
+		<h2>Bienvenidos a mi web</h2> <!--Encabezado lvl 2 son los Subtítulos (Pueden ser varios)-->
+
+		<p> <!--Parrafos-->
+			In orci dolor, luctus ac metus at, euismod condimentum leo. Maecenas eu gravida augue. Aliquam erat volutpat. Aliquam efficitur ligula posuere, sodales nulla vel, consectetur diam. Sed venenatis ornare eros iaculis accumsan. Pellentesque elit arcu, tempus ac sem vitae, lacinia ullamcorper velit. Curabitur rhoncus aliquet orci et molestie. Morbi et nulla dictum, commodo urna non, ullamcorper magna. Suspendisse non quam eget velit imperdiet ultrices. Etiam a lorem ut elit tincidunt auctor. Nam vitae volutpat mauris. Etiam id enim massa. Maecenas posuere molestie malesuada. Suspendisse maximus odio eget tortor auctor, sed maximus sapien sollicitudin.
+		</p>
+		<p>
+			In orci dolor, luctus ac metus at, euismod condimentum leo. Maecenas eu gravida augue. Aliquam erat volutpat. Aliquam efficitur ligula posuere, sodales nulla vel, consectetur diam. Sed venenatis ornare eros iaculis accumsan. Pellentesque elit arcu, tempus ac sem vitae, lacinia ullamcorper velit. Curabitur rhoncus aliquet orci et molestie. <!--Saltos de línea--><br/> <br/>Morbi et nulla dictum, commodo urna non, ullamcorper magna. Suspendisse non quam eget velit imperdiet ultrices. Etiam a lorem ut elit tincidunt auctor. Nam vitae volutpat mauris. Etiam id enim massa. Maecenas posuere molestie malesuada. Suspendisse maximus odio eget tortor auctor, sed maximus sapien sollicitudin.
+		</p>
+		<p>
+			In orci dolor, luctus ac metus at, euismod condimentum leo. Maecenas eu gravida augue. Aliquam erat volutpat. Aliquam efficitur ligula posuere, sodales nulla vel, consectetur diam. Sed venenatis ornare eros iaculis accumsan. Pellentesque elit arcu, tempus ac sem vitae, lacinia ullamcorper velit. Curabitur rhoncus aliquet orci et molestie. 
+			Morbi et nulla dictum, commodo urna non, ullamcorper magna. Suspendisse non quam eget velit imperdiet ultrices. Etiam a lorem ut elit tincidunt auctor. Nam vitae volutpat mauris. Etiam id enim massa. Maecenas posuere molestie malesuada. Suspendisse maximus odio eget tortor auctor, sed maximus sapien sollicitudin.
+		</p>
+
+		<hr/> <!--Salto de línea marcando una línea separadora-->
+			<h2>Imagenes en HTML</h2>
+			<!-- "src=RutaRelativaImagen" "alt=TextoCargarSinoMuestraImagen" "title=Título" "width/height (Solo 1 para no deformar la imagen)"-->
+			<img src="imagenes/Perros.jpg" alt="Imagen de un perro" title="Foto de perro" width="455px" />
+			<!-- RutaRelativa en lugar de RutaAbsoluta la imagen tiene que estar en la misma carpeta del archivo.html-->
+		<hr/>
+
+		<h3>Tercer encabezado de la página</h3>
+		<p>
+			In orci dolor, <strong>luctus ac metus at</strong> <!--strong= texto sombreado-->, euismod condimentum leo. Maecenas eu gravida augue. <em>Aliquam erat volutpat</em> <!--em= texto en cursiva-->. Aliquam efficitur ligula posuere, sodales nulla vel, consectetur diam. Sed venenatis ornare eros iaculis accumsan. Pellentesque elit arcu, tempus ac sem vitae, lacinia ullamcorper velit. Curabitur rhoncus aliquet orci et molestie.
+			<blockquote> <!--Remarca una cita con tabulaciones y espaciados especiales-->
+				Morbi et nulla dictum, commodo urna non, ullamcorper magna. Suspendisse non quam eget velit imperdiet ultrices. Etiam a lorem ut elit tincidunt auctor. Nam vitae volutpat mauris. Etiam id enim massa. <span id="resaltado" class="rojo amarillo">Maecenas posuere molestie malesuada</span> <!--Identificador y Clases para con CSS cambiarle el estilo-->. Suspendisse maximus odio eget tortor auctor, <i>sed maximus sapien sollicitudin</i> <!--i= texto en cursiva también-->.
+			</blockquote>
+		</p>
+
+		<h3>Listado de frutas ordenadas</h3>
+		<ol> <!--Listas ordenadas-->
+			<li>Manzana</li> <!--Elemento de la lista-->
+			<li>Naranja</li>
+			<li>Pera</li>
+			<li>Sandia</li>
+		</ol>
+
+		<h3>Listado de frutas desordenadas</h3>
+		<ul> <!--Listas desordenadas-->
+			<li>Manzana</li>
+				<ul> <!-- Sublista desordenada-->
+					<li>Roja</li>
+					<li>Verde</li>
+				</ul>
+			<li>Naranja</li>
+			<li>Pera</li>
+			<li>Sandia</li>
+		</ul>
+
+		<h3>Tablas</h3>
+		<table border="1"> <!--Representa tabla-->
+			<tr> <!--Representa fila-->
+				<th>Nombre</th> <!--Representa columna (recomendable th sombrea atributos principales)-->
+				<th>Apellidos</th>
+				<th>Pais</th>
+			</tr>
+			<tr>
+				<td>Jesús</td>
+				<td>Brito</td>
+				<td>Venezuela</td>
+			</tr>
+			<tr>
+				<td>Victor</td>
+				<td colspan="2">Robles</td> <!-- colspan expande a n° de columnas asignadas-->
+			</tr>
+		</table>
+
+		<h3>Formulario</h3>
+		<form>  <!--Representa formulario-->
+			<p>
+				<label for="nombre">Nombre</label> <!--Etiqueta vinculada con campo de texto "nombre"-->
+				<input type="text" name="nombre" placeholder="Indica tu nombre..." />
+				<!--CampoTexto llamado "nombre" con placeholder(msj indicador)-->
+			</p>
+
+			<p> <!--Uso de Parrafo como salto de linea-->
+				<label for="descripcion">Descripción</label>
+				<textarea name="descripcion"></textarea>
+			</p>
+
+			<!--Representa radio buttons-->
+			<input type="radio" name="genero" value="hombre">Hombre<br/> <!--br/ = Saltos de línea-->
+			<input type="radio" name="genero" value="mujer">Mujer<br/>
+			<input type="radio" name="genero" value="nada">Nada<br/>
+
+			<!--Representa select options-->
+			<select name="generodos">
+				<option value="hombre">Hombre</option>
+				<option value="mujer">Mujer</option>
+				<option value="nada">Nada</option>
+			</select>
+
+			<!--Representa boton-->
+			<input type="submit" value="Enviar formulario"/>
+		</form>
+
+	</body> <!--Cierre de cuerpo de la pagina web-->
+
+</html> <!--Cierre de etiqueta HTML-->

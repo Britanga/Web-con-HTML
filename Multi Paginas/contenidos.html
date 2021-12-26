@@ -1,0 +1,55 @@
+<!DOCTYPE HTML> <!--establece la version de HTML utilizada-->
+
+<!--Estructura de una pagina web HTML-->
+
+<html lang="es"> <!--Lenguaje español-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	<!--Para poder usar los acentos y la ñ-->
+
+	<head> <!--Cabecera no visible dentro de la pagina web-->
+		<title>Mi primera web</title>
+	</head>
+
+	<body> <!--Cuerpo de la pagina web-->
+		<!--Encabezado lvl 1 es el Título (Solo 1 en la web)-->
+		<h1>Mi primera web</h1>
+
+		<!--Menú-->
+		<ul> <!--Lista desordenada-->
+			<li><a href="index.html" title="Inicio"> Inicio</a></li>	<!--hipervínculo a index.html-->
+			<li><a href="contenidos.html">Contenidos</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
+		</ul>
+
+		<hr/> <!--Salto de línea marcando una línea separadora-->
+
+		<!--Contenido de contenidos.html-->
+		<h2>Tabla de contenidos</h2> <!--Encabezado lvl 2 son los Subtítulos (Pueden ser varios)-->
+		<table border="1"> <!--Representa tabla-->
+			<tr> <!--Representa fila-->
+				<th>Perro</th> <!--Representa columna (recomendable th sombrea atributos principales)-->
+				<th>Oso</th>
+				<th>Caballito</th>
+				<th>Gato</th>
+			</tr>
+			<tr>
+				<td>
+					<!-- "src=RutaRelativaImagen" "width/height (Solo 1 para no deformar la imagen)"-->
+					<img src="imagenes/Perro.jpg" height="100px" />
+					<!-- RutaRelativa en lugar de RutaAbsoluta la imagen tiene que estar en la misma carpeta del archivo.html-->
+				</td>
+				<td>
+					<img src="imagenes/Oso.jpg" height="100px" />
+				</td>
+				<td>
+					<img src="imagenes/Caballo.jpg" height="100px" />
+				</td>
+				<td>
+					<img src="imagenes/Gato.jpg" height="100px" />
+				</td>
+			</tr>
+		</table>
+
+	</body> <!--Cierre de cuerpo de la pagina web-->
+
+</html> <!--Cierre de etiqueta HTML-->
